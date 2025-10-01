@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page Not Found - LoftVision">
+    <title>404 - Page Not Found | LoftVision</title>
+    
+    <!-- PicoCSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/404.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>LoftVision</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#designs">Designs</a></li>
+        </ul>
+    </nav>
+
+    <!-- 404 Content -->
+    <main class="container">
+        <section class="error-404">
+            <div class="error-illustration">
+                <div class="error-code">404</div>
+                <div class="error-icon">🏗️</div>
+            </div>
+            
+            <hgroup class="error-text">
+                <h1>Oops! Page Not Found</h1>
+                <p>The design you're looking for seems to have been demolished or moved to a new location.</p>
+            </hgroup>
+
+            <article class="error-info">
+                <p>This could have happened for a few reasons:</p>
+                <ul>
+                    <li>The URL was typed incorrectly</li>
+                    <li>The design has been removed or archived</li>
+                    <li>The page you're looking for doesn't exist</li>
+                    <li>You followed an outdated link</li>
+                </ul>
+            </article>
+
+            <div class="error-actions">
+                <a href="/" role="button" class="primary">
+                    🏠 Return Home
+                </a>
+                <a href="/#designs" role="button" class="secondary">
+                    🎨 Browse Designs
+                </a>
+                <button onclick="goBack()" class="outline">
+                    ← Go Back
+                </button>
+            </div>
+
+            <!-- Popular Designs -->
+            <article class="popular-designs">
+                <h3>Looking for inspiration? Check out our popular designs:</h3>
+                <div class="quick-links">
+                    <a href="/designs/industrial-brooklyn-loft">Industrial Brooklyn Loft</a>
+                    <a href="/designs/minimalist-scandinavian-loft">Minimalist Scandinavian Loft</a>
+                    <a href="/designs/contemporary-urban-penthouse">Contemporary Urban Penthouse</a>
+                    <a href="/designs/modern-glass-box-loft">Modern Glass Box Loft</a>
+                </div>
+            </article>
+
+            <!-- Search Suggestion -->
+            <div class="error-tip">
+                <small>
+                    💡 <strong>Tip:</strong> Try starting from the <a href="/">homepage</a> 
+                    or browse all our <a href="/#designs">design collection</a>.
+                </small>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <small>
+            &copy; 2025 LoftVision. All rights reserved. | 
+            <a href="/">Home</a> | 
+            <a href="/#designs">Designs</a>
+        </small>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Go back to previous page
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        }
+
+        // Log 404 for debugging
+        console.log('📍 404 Error - Page not found');
+        console.log('🔗 Attempted URL:', window.location.href);
+    </script>
+</body>
+</html>

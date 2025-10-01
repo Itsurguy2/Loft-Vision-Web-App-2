@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LoftVision - Design Details">
+    <title>Design Details | LoftVision</title>
+    
+    <!-- PicoCSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>LoftVision</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/">← Back to Gallery</a></li>
+            <li><a href="/#designs">All Designs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Loading State -->
+        <div id="loading" class="loading-container">
+            <article aria-busy="true">
+                <p>Loading design details...</p>
+            </article>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="error-container" style="display: none;">
+            <article>
+                <h2>❌ Design Not Found</h2>
+                <p>The design you're looking for doesn't exist or has been removed.</p>
+                <a href="/" role="button">Return to Gallery</a>
+            </article>
+        </div>
+
+        <!-- Design Detail Content -->
+        <div id="design-content" style="display: none;">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#designs">Designs</a></li>
+                    <li id="breadcrumb-title">Current Design</li>
+                </ul>
+            </nav>
+
+            <!-- Hero Image -->
+            <section class="detail-hero">
+                <img id="design-image" src="" alt="Design Image" class="hero-image">
+            </section>
+
+            <!-- Design Information -->
+            <section class="detail-info">
+                <div class="detail-header">
+                    <hgroup>
+                        <h1 id="design-title"></h1>
+                        <p id="design-style-location"></p>
+                    </hgroup>
+                    <div class="detail-price">
+                        <small>Project Cost</small>
+                        <h2 id="design-price"></h2>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <article class="detail-description">
+                    <h3>About This Design</h3>
+                    <p id="design-description"></p>
+                </article>
+
+                <!-- Specifications Grid -->
+                <article class="detail-specs">
+                    <h3>Specifications</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <strong>Square Footage</strong>
+                            <p id="spec-sqft"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Bedrooms</strong>
+                            <p id="spec-bedrooms"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Bathrooms</strong>
+                            <p id="spec-bathrooms"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Style</strong>
+                            <p id="spec-style"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Year Completed</strong>
+                            <p id="spec-year"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Location</strong>
+                            <p id="spec-location"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Architect</strong>
+                            <p id="spec-architect"></p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Design ID</strong>
+                            <p id="spec-id"></p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Action Buttons -->
+                <div class="detail-actions">
+                    <a href="/" role="button" class="secondary">← Back to Gallery</a>
+                    <button onclick="contactAboutDesign()" class="primary">Inquire About This Design</button>
+                    <button onclick="shareDesign()" class="outline">📤 Share</button>
+                    <button onclick="printDesign()" class="outline">🖨️ Print</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <small>
+            &copy; 2025 LoftVision. All rights reserved. | 
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a>
+        </small>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script src="/js/detail.js"></script>
+</body>
+</html>

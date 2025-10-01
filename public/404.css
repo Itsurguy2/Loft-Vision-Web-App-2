@@ -1,0 +1,240 @@
+/* 404 Error Page Styles */
+
+.error-404 {
+    text-align: center;
+    padding: 3rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Error Illustration */
+.error-illustration {
+    position: relative;
+    margin: 2rem 0;
+    animation: fadeIn 0.6s ease-in;
+}
+
+.error-code {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--loft-primary) 0%, var(--loft-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.3;
+    margin: 0;
+    letter-spacing: -10px;
+}
+
+.error-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    animation: bounce 2s infinite;
+}
+
+/* Error Text */
+.error-text {
+    margin: 2rem 0;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.error-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--loft-primary);
+}
+
+.error-text p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Error Info Box */
+.error-info {
+    text-align: left;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--background-color);
+    border-left: 4px solid var(--loft-secondary);
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.error-info p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--loft-primary);
+}
+
+.error-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.error-info li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.error-info li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--loft-secondary);
+    font-weight: bold;
+}
+
+/* Error Actions */
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.error-actions button,
+.error-actions a {
+    min-width: 180px;
+}
+
+.error-actions .primary {
+    background: var(--loft-primary);
+}
+
+.error-actions .secondary {
+    background: var(--loft-secondary);
+}
+
+/* Popular Designs Section */
+.popular-designs {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--background-color);
+    border-radius: 12px;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.popular-designs h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--loft-primary);
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quick-links a {
+    padding: 1rem;
+    background: white;
+    border: 2px solid var(--loft-light);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--loft-primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.quick-links a:hover {
+    border-color: var(--loft-accent);
+    transform: translateX(5px);
+    background: var(--loft-light);
+}
+
+/* Error Tip */
+.error-tip {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--loft-accent) 0%, var(--loft-primary) 100%);
+    border-radius: 8px;
+    color: white;
+    animation: fadeInUp 1.6s ease-out;
+}
+
+.error-tip a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.error-tip a:hover {
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 6rem;
+        letter-spacing: -5px;
+    }
+    
+    .error-icon {
+        font-size: 3rem;
+    }
+    
+    .error-text h1 {
+        font-size: 2rem;
+    }
+    
+    .error-text p {
+        font-size: 1rem;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+    }
+    
+    .error-actions button,
+    .error-actions a {
+        width: 100%;
+    }
+    
+    .quick-links {
+        gap: 0.5rem;
+    }
+}
