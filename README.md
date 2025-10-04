@@ -41,8 +41,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://www.canva.com/design/DAG0ySsQVYI/QqXSfTPySpSRt8mBpw8-IQ/edit?utm_content=DAG0ySsQVYI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-  ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://ezgif.com/gif-to-mp4/ezgif-6709d6c9bc8812.gif.html' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
