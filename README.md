@@ -41,7 +41,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://ezgif.com/gif-to-mp4/ezgif-6709d6c9bc8812.gif.html' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Itsurguy2/Loft-Vision-Web-App-2/blob/master/LoftVisionGif2-ezgif.com-optimize.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
